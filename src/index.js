@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import BaiTapChonXe from './BaiTapChonXe/BaiTapChonXe';
 // import RenderingCodition from './components/RenderingCodition/RenderingCodition';
 // import HandleEvent from './HandlEvent/HandleEvent';
 // import Header from './components/Demo/Header';
 // import BaiTapThucHanhLayout from './components/Demo/BaiTapThucHanhLayout';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StateDemo from './State/StateDemo';
+// import Styling from './Styling/Styling';
+// import StateDemo from './State/StateDemo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +18,9 @@ root.render(
     {/* <Header/> */}
     {/* <HandleEvent/> */}
     {/* <RenderingCodition/> */}
-    <StateDemo/>
+    {/* <StateDemo/> */}
+    {/* <Styling/> */}
+    <BaiTapChonXe/>
   </React.StrictMode>
 );
 
