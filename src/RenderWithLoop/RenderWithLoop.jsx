@@ -27,6 +27,7 @@ class RenderWithLoop extends Component {
       img: "./carbasic/products/steel-car.jpg",
     },
   ];
+  //Cách 1: Render array object sử dụng for           
   renderTable = () => {
     let arrayTrComponent = [];
     for (let index = 0; index < this.productList.length; index++) {
@@ -44,9 +45,10 @@ class RenderWithLoop extends Component {
       arrayTrComponent.push(trJSX);
     }
     return (
-      arrayTrComponent  
+      arrayTrComponent      
     )
   };
+  //Cách 2: Dùng map
   // renderTable = () => {
   //   return this.productList.map((product, index) => {
   //     return (
