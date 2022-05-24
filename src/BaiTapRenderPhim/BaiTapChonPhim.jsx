@@ -6,11 +6,11 @@ export default class BaiTapRenderPhim extends Component {
     let contentFilms = dataFilms.map((film, index) => {
       return (
         <div className="col-3" key={index}>
-          <div class="card text-white bg-primary" style={{height:'600px'}}>
+          <div class="card text-white bg-dark" style={{height:'600px'}}>
             <img className="card-img-top" src={film.hinhAnh} alt />
-              <div className="card-body">
+              <div className="card-body" style={{height:'40%'}}>
                 <h4 className="card-title">{film.tenPhim}</h4>
-                <p className="card-text" style={{height:'60%'}}>{film.moTa}</p>
+                <p className="card-text" >{film.moTa}</p>
                 <p className="card-date">Date: {film.ngayKhoiChieu}</p>
               </div>
             </div>
@@ -24,7 +24,7 @@ export default class BaiTapRenderPhim extends Component {
       <div
         className="container"
         style={{
-          backgroundImage: "url(./background/avenger.jpg)",
+          backgroundImage: "url(./background/avenger.jpg)", backgroundRepeat: "none",
           minHeight: "2000px",
         }}
       >
@@ -32,8 +32,8 @@ export default class BaiTapRenderPhim extends Component {
           style={{ backgroundColor: "rgba(0, 0, 0, .5)", minHeight: "2000px" }}
         >
           <nav
-            className="navbar navbar-expand-sm navbar-dark bg-primary"
-            style={{ backgroundColor: "rgba(87,83,149, 0,8)" }}
+            className="navbar navbar-expand-sm navbar-dark bg-dark"
+            style={{ backgroundColor: "rgba(255, 255, 255, 1.8)" }}
           >
             <a className="navbar-brand" href="#">
               Start Movie
