@@ -28,23 +28,43 @@ class RenderWithLoop extends Component {
     },
   ];
   renderTable = () => {
-    return this.productList.map((product, index) => {
-      return (
-        <tr key={index}>
+    let arrayTrComponent = [];
+    for (let index = 0; index < this.productList.length; index++) {
+      let product = this.productList[index];
+      let trJSX = (
+        <tr key = {index}>
           <td>{product.id}</td>
           <td>{product.name}</td>
           <td>{product.price}</td>
           <td>
-            <img
-              src={product.img}
-              style={{ width: "200px" }}
-              alt={product.id}
-            />{" "}
+            <img src={product.img} style={{width: "100px"}} alt={product.id} />
           </td>
         </tr>
       );
-    });
+      arrayTrComponent.push(trJSX);
+    }
+    return (
+      arrayTrComponent  
+    )
   };
+  // renderTable = () => {
+  //   return this.productList.map((product, index) => {
+  //     return (
+  //       <tr key={index}>
+  //         <td>{product.id}</td>
+  //         <td>{product.name}</td>
+  //         <td>{product.price}</td>
+  //         <td>
+  //           <img
+  //             src={product.img}
+  //             style={{ width: "200px" }}
+  //             alt={product.id}
+  //           />{" "}
+  //         </td>
+  //       </tr>
+  //     );
+  //   });
+  // };
 
   render() {
     return (
@@ -58,9 +78,7 @@ class RenderWithLoop extends Component {
               <th>image</th>
             </tr>
           </thead>
-          <tbody>
-            {this.renderTable()}
-          </tbody>
+          <tbody>{this.renderTable()}</tbody>
         </table>
       </div>
     );
