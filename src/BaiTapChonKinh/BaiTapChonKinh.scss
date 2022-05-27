@@ -1,0 +1,25 @@
+.col-6{
+    position: relative;
+    .model{
+        position: absolute;
+    }
+    .glass{
+        position: absolute;
+        top: 77px;
+        right: 65px;
+        opacity: 0.8;
+    }
+    .decrip{
+        position: relative; 
+        width:250px;
+        top: 215px;
+        left: 246px;
+        padding-left: 15px;
+        background-color: rgba($color: #ff9a9a, $alpha: 0.5);
+        text-align: left;
+        height: 90px;
+        color: #6aa0ad;
+        font-size: medium;
+        font-weight: 600;
+    }
+}

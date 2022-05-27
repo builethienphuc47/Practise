@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import BaiTapRenderPhim from './BaiTapRenderPhim/BaiTapChonPhim';
+import BaiTapChonKinh from './BaiTapChonKinh/BaiTapChonKinh';
+// import BaiTapRenderPhim from './BaiTapRenderPhim/BaiTapChonPhim';
 // import BaiTapChonXe from './BaiTapChonXe/BaiTapChonXe';
 // import RenderingCodition from './components/RenderingCodition/RenderingCodition';
 // import HandleEvent from './HandlEvent/HandleEvent';
@@ -24,7 +25,8 @@ root.render(
     {/* <Styling/> */}
     {/* <BaiTapChonXe/> */}
     {/* <RenderWithLoop/> */}
-    <BaiTapRenderPhim/>
+    {/* <BaiTapRenderPhim/> */}
+    <BaiTapChonKinh/>
   </React.StrictMode>
 );
 

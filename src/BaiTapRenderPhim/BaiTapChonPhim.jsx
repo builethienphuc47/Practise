@@ -10,7 +10,7 @@ export default class BaiTapRenderPhim extends Component {
             <img className="card-img-top" src={film.hinhAnh} alt />
               <div className="card-body" style={{height:'40%'}}>
                 <h4 className="card-title">{film.tenPhim}</h4>
-                <p className="card-text" >{film.moTa}</p>
+                <p className="card-text" >{film.moTa.length>120 ? <p>{film.moTa.substring(0,120)} ...</p> : <p>{film.moTa}</p>}</p>
                 <p className="card-date">Date: {film.ngayKhoiChieu}</p>
               </div>
             </div>
@@ -22,7 +22,7 @@ export default class BaiTapRenderPhim extends Component {
   render() {
     return (
       <div
-        className="container"
+        className="container col-12"
         style={{
           backgroundImage: "url(./background/avenger.jpg)", backgroundRepeat: "none",
           minHeight: "2000px",
